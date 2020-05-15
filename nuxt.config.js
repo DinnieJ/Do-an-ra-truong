@@ -1,5 +1,5 @@
 
-export default {
+module.exports =  {
   mode: 'spa',
   dev: (process.env.NODE_ENV !== 'production'),
   /*
@@ -69,5 +69,8 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  env: {
+    baseApi: process.env.BASE_API || 'https://jav-rest-api-htpvmrzjet.now.sh/api'
   }
 }

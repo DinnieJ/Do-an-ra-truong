@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 export const javsearch = axios.create({
-  baseURL: 'https://jav-rest-api-htpvmrzjet.now.sh/api'
+  baseURL: process.env.baseApi
 })
 
 export const searchActress = (name) => {
