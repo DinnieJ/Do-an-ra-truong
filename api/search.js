@@ -12,6 +12,10 @@ export const searchActress = (name) => {
   })
 }
 
+export const getSuggestActress = (key) => {
+  return javsearch.get(`/actress?name=${key}&hits=10`, {})
+}
+
 export const getMovies = (code, offset, hits) => {
   return javsearch.get(`/videos/${code}`, {
     params: {

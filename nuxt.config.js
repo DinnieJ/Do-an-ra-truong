@@ -24,7 +24,8 @@ module.exports =  {
   ** Global CSS
   */
   css: [
-    '@fortawesome/fontawesome-svg-core/styles.css'
+    '@fortawesome/fontawesome-svg-core/styles.css',
+    'assets/my-buefy.scss'
   ],
   /*
   ** Plugins to load before mounting the App
